@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Release Notes for X-CUBE-OPUS package</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="_htmresc/mini-st_2020.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <link rel="icon" type="image/x-icon" href="_htmresc/favicon.png" />
+</head>
+<body>
+<div class="row">
+<div class="col-sm-12 col-lg-4">
+<center>
+<h1 id="release-notes-for-x-cube-opus">Release Notes for X-CUBE-OPUS</h1>
+<p>Copyright © 2020 STMicroelectronics<br />
+</p>
+<a href="https://www.st.com" class="logo"><img src="_htmresc/st_logo_2020.png" alt="ST logo" /></a>
+</center>
+<h1 id="license">License</h1>
+<p>This software package is licensed by ST under SLA0095 (Mix ODE+OSS+3rd-party Software License Agreement); You may not use this component except in compliance with the License. You may obtain a copy of the License at:</p>
+<p>https://www.st.com/sla0095</p>
+<h1 id="purpose">Purpose</h1>
+<p>The X-CUBE-OPUS expansion software package allows the user to evaluate Opus performance depending on his target application, facilitating the choice of the correct STM32 and easily integrate the audio codec</p>
+<p>X-CUBE-OPUS software features:</p>
+<ul>
+<li>Complete tool to evaluate and profile the advanced Opus audio codec with each possible configuration on different STM32 family (ARM Cortex M4, M7, M33)</li>
+<li>Firmware example that shows how to use and integrate Opus on different STM32 family.</li>
+<li>Sample application (compatible with Python 3.7) that allows to configure Opus, send audio data to STM32 Nucleo board and receive profiling results.</li>
+<li>Third-party Opus v1.3.1 (downloadable from https://www.opus-codec.org): an open, royalty-free and highly versatile audio codec that is standardized by the Internet Engineering Task Force (IETF) as RFC 6716</li>
+<li>Custom serial protocol to easily communicate between STM32 Nucleo board and Host using dedicated command</li>
+<li>Sample implementation available on NUCLEO-F413ZH, NUCLEO-H743ZI, NUCLEO-F746ZG, NUCLEO-L552ZE-Q or P-NUCLEO-WB55 development board</li>
+<li>Easy portability across different MCU families, thanks to STM32Cube</li>
+<li>Free, user-friendly license terms</li>
+</ul>
+<p>The figure below shows the overall architecture: <img src="_htmresc/architecture_X-CUBE-OPUS.png" /></p>
+<p>Here is the list of references to the user documents:</p>
+<ul>
+<li><a href="https://www.st.com/en/embedded-software/x-cube-opus.html/">Data Brief</a>: X-CUBE-OPUS Data Brief</li>
+<li><a href="https://www.st.com/en/embedded-software/x-cube-opus.html/">User Manual</a>: X-CUBE-OPUS User Manual</li>
+<li><a href="https://www.st.com/content/st_com/en/stm32cube-ecosystem.html/">STM32Cube</a>: STM32Cube Ecosystem</li>
+<li><a href="http://www.st.com/stm32nucleo/">STM32Nucleo board</a>: STM32 Nucleo Boards</li>
+</ul>
+</div>
+<div class="col-sm-12 col-lg-8">
+<h1 id="update-history">Update history</h1>
+<div class="collapse">
+<input type="checkbox" id="collapse-section4" checked aria-hidden="true"> <label for="collapse-section4" aria-hidden="true"><strong>V1.0.0 / 11-Dec-2020</strong></label>
+<div>
+<h2 id="main-changes">Main changes</h2>
+<h3 id="first-release">First release</h3>
+<p>First Release of X-CUBE-OPUS: Opus evaluation and profiling software expansion for STM32Cube.</p>
+<h2 id="contents">Contents</h2>
+<p>Documentation</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">License</th>
+<th style="text-align: left;">Document</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">X-CUBE-OPUS API Description</td>
+<td style="text-align: left;">1.0.0</td>
+<td style="text-align: left;"><a href="https://www.st.com/sla0055">SLA0055</a></td>
+<td style="text-align: left;"><a href="Documentation\X-CUBE-OPUS_documentation.chm">CHM</a></td>
+</tr>
+</tbody>
+</table>
+<p>Drivers</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">License</th>
+<th style="text-align: left;">Release note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">STM32F4xx CMSIS</td>
+<td style="text-align: left;">2.6.5</td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/BSD-3-Clause">BSD-3-Clause</a></td>
+<td style="text-align: left;"><a href="Drivers\CMSIS\Device\ST\STM32F4xx\Release_Notes.html">release note</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">STM32F4xx HAL</td>
+<td style="text-align: left;">1.7.8</td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/BSD-3-Clause">BSD-3-Clause</a></td>
+<td style="text-align: left;"><a href="Drivers\STM32F4xx_HAL_Driver\Release_Notes.html">release note</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">BSP STM32F4xx_Nucleo_144</td>
+<td style="text-align: left;">1.0.3</td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/BSD-3-Clause">BSD-3-Clause</a></td>
+<td style="text-align: left;"><a href="Drivers\BSP\STM32F4xx_Nucleo_144\Release_Notes.html">release note</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">STM32F7xx CMSIS</td>
+<td style="text-align: left;">1.2.5</td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/BSD-3-Clause">BSD-3-Clause</a></td>
+<td style="text-align: left;"><a href="Drivers\CMSIS\Device\ST\STM32F7xx\Release_Notes.html">release note</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">STM32F7xx HAL</td>
+<td style="text-align: left;">1.2.8</td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/BSD-3-Clause">BSD-3-Clause</a></td>
+<td style="text-align: left;"><a href="Drivers\STM32F7xx_HAL_Driver\Release_Notes.html">release note</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">BSP STM32F7xx_Nucleo_144</td>
+<td style="text-align: left;">1.0.0</td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/BSD-3-Clause">BSD-3-Clause</a></td>
+<td style="text-align: left;"><a href="Drivers\BSP\STM32F7xx_Nucleo_144\Release_Notes.html">release note</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">STM32H7xx CMSIS</td>
+<td style="text-align: left;">1.9.0</td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/BSD-3-Clause">BSD-3-Clause</a></td>
+<td style="text-align: left;"><a href="Drivers\CMSIS\Device\ST\STM32H7xx\Release_Notes.html">release note</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">STM32H7xx HAL</td>
+<td style="text-align: left;">1.9.0</td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/BSD-3-Clause">BSD-3-Clause</a></td>
+<td style="text-align: left;"><a href="Drivers\STM32H7xx_HAL_Driver\Release_Notes.html">release note</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">BSP STM32H7xx_Nucleo</td>
+<td style="text-align: left;">1.1.0</td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/BSD-3-Clause">BSD-3-Clause</a></td>
+<td style="text-align: left;"><a href="Drivers\BSP\STM32H7xx_Nucleo\Release_Notes.html">release note</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">STM32L5xx CMSIS</td>
+<td style="text-align: left;">1.0.3</td>
+<td style="text-align: left;"><a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a></td>
+<td style="text-align: left;"><a href="Drivers\CMSIS\Device\ST\STM32L5xx\Release_Notes.html">release note</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">STM32L5xx HAL</td>
+<td style="text-align: left;">1.0.3</td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/BSD-3-Clause">BSD-3-Clause</a></td>
+<td style="text-align: left;"><a href="Drivers\STM32L5xx_HAL_Driver\Release_Notes.html">release note</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">BSP STM32L5xx_Nucleo</td>
+<td style="text-align: left;">1.0.2</td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/BSD-3-Clause">BSD-3-Clause</a></td>
+<td style="text-align: left;"><a href="Drivers\BSP\STM32L5xx_Nucleo\Release_Notes.html">release note</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">STM32WBxx CMSIS</td>
+<td style="text-align: left;">1.6.0</td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/BSD-3-Clause">BSD-3-Clause</a></td>
+<td style="text-align: left;"><a href="Drivers\CMSIS\Device\ST\STM32WBxx\Release_Notes.html">release note</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">STM32WBxx HAL</td>
+<td style="text-align: left;">1.6.0</td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/BSD-3-Clause">BSD-3-Clause</a></td>
+<td style="text-align: left;"><a href="Drivers\STM32WBxx_HAL_Driver\Release_Notes.html">release note</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">BSP P-NUCLEO-WB55.Nucleo</td>
+<td style="text-align: left;">1.0.1</td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/BSD-3-Clause">BSD-3-Clause</a></td>
+<td style="text-align: left;"><a href="Drivers\BSP\P-NUCLEO-WB55.Nucleo\Release_Notes.html">release note</a></td>
+</tr>
+</tbody>
+</table>
+<p>Middlewares</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">License</th>
+<th style="text-align: left;">Release note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">STCmdP</td>
+<td style="text-align: left;">1.0.0</td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/BSD-3-Clause">BSD-3-Clause</a></td>
+<td style="text-align: left;"><a href="Middlewares\ST\STCmdP\Release_Notes.html">release note</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Opus</td>
+<td style="text-align: left;">1.3.1</td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/BSD-3-Clause">BSD-3-Clause</a></td>
+<td style="text-align: left;"><a href="Middlewares\Third_Party\Opus\README">readme</a></td>
+</tr>
+</tbody>
+</table>
+<p>Projects</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">License</th>
+<th style="text-align: left;">Release note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">OpusProfilingTool</td>
+<td style="text-align: left;">1.0.0</td>
+<td style="text-align: left;"><a href="https://www.st.com/sla0094">SLA0094</a></td>
+<td style="text-align: left;"><a href="Release_Notes.html">release note</a></td>
+</tr>
+</tbody>
+</table>
+<p>Utilities</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">License</th>
+<th style="text-align: left;">Document</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">OPT SW Control</td>
+<td style="text-align: left;">1.0.0</td>
+<td style="text-align: left;"><a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a></td>
+<td style="text-align: left;"><a href="Utilities\PC_software\OPT_SW_Control\OPT_QuickStartGuide.pdf">Quick Start Guide</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="known-limitations">Known limitations</h2>
+<h2 id="development-toolchains-and-compilers">Development toolchains and compilers</h2>
+<ul>
+<li>IAR Embedded Workbench for ARM (EWARM) toolchain V8.50.5 + STLink/V2</li>
+<li>RealView Microcontroller Development Kit (MDK-ARM) toolchain V5.31 + ST-LINK/V2</li>
+<li>STM32CubeIDE toolchain v1.4.2 + ST-LINK/V2</li>
+</ul>
+<h2 id="supported-devices-and-boards">Supported devices and boards</h2>
+<ul>
+<li>STM32F413ZH devices and NUCLEO-F413ZH board</li>
+<li>STM32F746ZG devices and NUCLEO-F746ZG board</li>
+<li>STM32H743ZI devices and NUCLEO-H743ZI board</li>
+<li>STM32L552ZE devices and NUCLEO-L552ZE-Q board</li>
+<li>STM32WB55RG devices and P-NUCLEO-WB55 board</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<footer class="sticky">
+<div class="columns">
+<div class="column" style="width:95%;">
+<p>For complete documentation on <strong>X-CUBE-OPUS</strong> , visit: <a href="https://www.st.com/en/embedded-software/x-cube-opus.html">X-CUBE-OPUS</a></p>
+</div><div class="column" style="width:5%;">
+<p><abbr title="Based on template cx566953 version 2.0">Info</abbr></p>
+</div>
+</div>
+</footer>
+</body>
+</html>
